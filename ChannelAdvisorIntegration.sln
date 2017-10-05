@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelAdvisor", "src\ChannelAdvisor\ChannelAdvisor.csproj", "{A62ED712-E6EC-4721-8393-54C63995B1B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelAdvisorTest", "test\ChannelAdvisorTest\ChannelAdvisorTest.csproj", "{89A3292F-46EB-4E05-AE5F-2B49CCADA9F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{ACEF4A05-12CC-4092-A208-2935093AFEB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D7E8F2C-FE35-46E8-8BB0-02C86A6EC3F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A62ED712-E6EC-4721-8393-54C63995B1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62ED712-E6EC-4721-8393-54C63995B1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62ED712-E6EC-4721-8393-54C63995B1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62ED712-E6EC-4721-8393-54C63995B1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A3292F-46EB-4E05-AE5F-2B49CCADA9F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A3292F-46EB-4E05-AE5F-2B49CCADA9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A3292F-46EB-4E05-AE5F-2B49CCADA9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A3292F-46EB-4E05-AE5F-2B49CCADA9F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A62ED712-E6EC-4721-8393-54C63995B1B4} = {2D7E8F2C-FE35-46E8-8BB0-02C86A6EC3F7}
+		{89A3292F-46EB-4E05-AE5F-2B49CCADA9F6} = {ACEF4A05-12CC-4092-A208-2935093AFEB3}
+	EndGlobalSection
+EndGlobal
