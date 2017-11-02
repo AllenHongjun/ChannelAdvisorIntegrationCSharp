@@ -13,8 +13,6 @@ namespace Aarvani.ChannelAdvisor.Services
         private static readonly string  refreshToken = "refreshToken";
         private static readonly string applicationid = "applicationid";
         private static readonly string sharesecret = "sharesecret";
-        /*attention convert to base-64 before check doc https://developer.channeladvisor.com/authorization/oauth-2-0-authorization-flow */
-        private static readonly string encryptedApplicationidAndShareSecret = "encryptedApplicationidAndShareSecret";
         private static AuthToken _token;
 
         public static AuthToken Token { get { return _token; } }
