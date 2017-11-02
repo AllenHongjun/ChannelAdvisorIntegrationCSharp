@@ -30,6 +30,7 @@ namespace Aarvani.ChannelAdvisor.Services
                     client.BaseAddress = new Uri(ValuesType.ApiUrls.Mainurl);
                     client.DefaultRequestHeaders.Accept.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
+                    string encryptedApplicationidAndShareSecret = Base64Encode(applicationid +":"+ sharesecret);
                     client.DefaultRequestHeaders.Add("Authorization", "Basic " + encryptedApplicationidAndShareSecret);
 
                     ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
@@ -57,6 +58,12 @@ namespace Aarvani.ChannelAdvisor.Services
 
             return _token;
 
+        }
+        
+         public static string Base64Encode(string plainText)
+        {
+            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            return System.Convert.ToBase64String(plainTextBytes);
         }
 
     }
